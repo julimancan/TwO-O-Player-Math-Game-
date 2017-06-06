@@ -21,7 +21,7 @@ current_player = 1
   puts "-----------NEW TURN-----------"
 
   puts "#{player.name}: #{question.print}"
-  puts "#{player.name}"
+ 
 
   answer = gets.chomp.to_i
 
