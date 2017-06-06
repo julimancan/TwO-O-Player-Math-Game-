@@ -25,11 +25,11 @@ while (player1.alive? && player2.alive?) do
   answer = gets.chomp.to_i
 
   if answer == question.answer
-  puts "Correct answer"
+  puts "Correct!"
   puts "#{player1.name} #{player1.lives}/3 lives and #{player2.name} #{player2.lives}/3 lives"
   else
     player.lives -= 1
-    puts "WRONG answer"
+    puts "Incorrect! BOOO"
     puts "#{player1.name} #{player1.lives}/3 lives and #{player2.name} #{player2.lives}/3 lives"
   end
   current_player = (current_player + 1) % 2
