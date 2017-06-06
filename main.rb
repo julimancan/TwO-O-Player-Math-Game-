@@ -11,9 +11,8 @@ player2 = Players.new(p2_name)
 
 current_player = 1
 
-
-  while (player1.alive? && player2.alive?) do
-
+while (player1.alive? && player2.alive?) do
+	
   player = (current_player == 1) ? player1 : player2
 
   question = Questions.new()
@@ -37,9 +36,9 @@ current_player = 1
 end
 
 if player1.lives == 0
-		puts "---#{player2.name} wins with #{player2.lives}/3 lives"
+   puts "---#{player2.name} wins with #{player2.lives}/3 lives"
 elsif player2.lives == 0
-		puts "---#{player1.name} wins with #{player1.lives}/3 lives"
+   puts "---#{player1.name} wins with #{player1.lives}/3 lives"
 end
 
 puts "-----------GAME OVER-----------"
